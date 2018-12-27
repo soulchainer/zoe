@@ -1,0 +1,106 @@
+{
+  "name": "zoe",
+  "version": "1.24.0",
+  "description": "🌀 Universal JavaScript linter and formatter",
+  "author": {
+    "name": "Jorge Gonzalez",
+    "email": "jrgqhd@gmail.com",
+    "url": "https://jorgegonzalez.io"
+  },
+  "contributors": [
+    {
+      "name": "Anton Zdanov",
+      "email": "azdanov@pm.me",
+      "url": "https://azdanov.js.org/"
+    }
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/jorgegonzalez/zoe",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jorgegonzalez/zoe.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jorgegonzalez/zoe/issues"
+  },
+  "keywords": [
+    "zoe",
+    "airbnb",
+    "code checker",
+    "code linter",
+    "code style",
+    "eslint",
+    "formatter",
+    "jshint",
+    "lint",
+    "linter",
+    "prettier",
+    "react",
+    "style",
+    "style checker",
+    "style linter",
+    "typescript"
+  ],
+  "engines": {
+    "node": ">=8.11"
+  },
+  "files": [
+    "dist",
+    "../LICENSE"
+  ],
+  "bin": {
+    "zoe": "dist/index.js"
+  },
+  "dependencies": {
+    "babel-eslint": "^10.0.1",
+    "chalk": "^2.4.1",
+    "eslint": "^5.11.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-config-zoe": "*",
+    "eslint-formatter-pretty": "^2.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jest": "^22.1.2",
+    "eslint-plugin-jsx": "^0.0.2",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-no-use-extend-native": "^0.4.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-react": "^7.11.1",
+    "eslint-plugin-typescript": "^0.14.0",
+    "eslint-plugin-unicorn": "^6.0.1",
+    "execa": "^1.0.0",
+    "globby": "^8.0.1",
+    "lodash": "^4.17.11",
+    "meow": "^5.0.0",
+    "ora": "^3.0.0",
+    "prettier": "^1.15.3",
+    "read-pkg": "^4.0.1",
+    "typescript-eslint-parser": "^21.0.2",
+    "v8-compile-cache": "^2.0.2",
+    "write-json-file": "^3.0.2",
+    "write-pkg": "^3.2.0"
+  },
+  "devDependencies": {
+    "@types/del": "^3.0.1",
+    "@types/eslint": "^4.16.3",
+    "@types/execa": "^0.9.0",
+    "@types/globby": "^8.0.0",
+    "@types/jest": "^23.3.5",
+    "@types/lodash": "^4.14.117",
+    "@types/meow": "^5.0.0",
+    "@types/node": "^10.11.7",
+    "@types/ora": "^1.3.4",
+    "@types/read-pkg": "^3.0.0",
+    "@types/read-pkg-up": "^3.0.1",
+    "@types/update-notifier": "^2.2.0",
+    "@types/which-pm": "^1.0.0",
+    "@types/write-pkg": "^3.1.0",
+    "typescript": "3.1.1"
+  },
+  "scripts": {
+    "build": "tsc",
+    "lint": "zoe",
+    "format": "zoe --fix"
+  }
+}

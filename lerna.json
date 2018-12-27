@@ -1,0 +1,6 @@
+{
+  "packages": ["zoe", "eslint-config-zoe"],
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "version": "independent"
+}

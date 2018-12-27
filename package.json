@@ -1,0 +1,11 @@
+{
+  "private": true,
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "build": "tsc -b zoe"
+  },
+  "workspaces": [
+    "zoe",
+    "eslint-config-zoe"
+  ]
+}

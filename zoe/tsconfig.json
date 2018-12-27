@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "lib": ["esnext"],
+    "target": "es6",
+    "moduleResolution": "node",
+    "sourceMap": false,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "strict": true,
+    "removeComments": true,
+    "rootDir": "src",
+    "outDir": "dist",
+    "baseUrl": "src/types",
+    "typeRoots": [
+      "src/types",
+      "./node_modules/@types",
+      "../node_modules/@types"
+    ]
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}
