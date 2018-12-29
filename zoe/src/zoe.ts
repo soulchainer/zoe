@@ -35,6 +35,5 @@ async function lint(): Promise<void> {
     return;
   }
 
-  await init();
   await lint();
 })();
