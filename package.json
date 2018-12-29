@@ -2,7 +2,9 @@
   "private": true,
   "scripts": {
     "bootstrap": "lerna bootstrap",
-    "build": "tsc -b zoe"
+    "build": "tsc -b zoe",
+    "lint": "zoe",
+    "format": "zoe --fix"
   },
   "workspaces": [
     "zoe",
