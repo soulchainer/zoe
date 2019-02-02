@@ -1,27 +1,27 @@
-import { CLIEngine, Linter } from "eslint";
+import { CLIEngine, Linter } from 'eslint';
 
 type AnyJson = boolean | number | string | null | JsonArray | JsonMap;
-// eslint-disable-next-line typescript/no-empty-interface
+// eslint-disable-next-line @typescript-eslint/no-empty-interface
 interface JsonArray extends Array<AnyJson> {}
 export interface JsonMap {
-  [key: string]: AnyJson;
+	[key: string]: AnyJson;
 }
 
-type Rule = {
-  [key: string]: Linter.RuleLevel | Linter.RuleLevelAndOptions;
-};
+interface Rule {
+	[key: string]: Linter.RuleLevel | Linter.RuleLevelAndOptions;
+}
 
-export type ZoeOptions = {
-  [key: string]: AnyJson | undefined;
-  rules?: Rule;
-  globals?: string[];
-  plugins?: string[];
-  envs?: string[];
-  parser?: string;
-  extends?: string[];
-};
+export interface ZoeOptions {
+	[key: string]: AnyJson | undefined;
+	rules?: Rule;
+	globals?: string[];
+	plugins?: string[];
+	envs?: string[];
+	parser?: string;
+	extends?: string[];
+}
 
-export type LintResults = {
-  report: CLIEngine.LintReport;
-  paths: string[];
-};
+export interface LintResults {
+	report: CLIEngine.LintReport;
+	paths: string[];
+}

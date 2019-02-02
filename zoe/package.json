@@ -1,19 +1,8 @@
 {
   "name": "zoe",
-  "version": "1.24.2",
-  "description": "🌀 Universal JavaScript linter and formatter",
-  "author": {
-    "name": "Jorge Gonzalez",
-    "email": "jrgqhd@gmail.com",
-    "url": "https://jorgegonzalez.io"
-  },
-  "contributors": [
-    {
-      "name": "Anton Zdanov",
-      "email": "azdanov@pm.me",
-      "url": "https://azdanov.js.org/"
-    }
-  ],
+  "version": "1.25.0",
+  "description": "🌀  Zero-config JavaScript Linter and Formatter.",
+  "author": "https://github.com/jorgegonzalez",
   "license": "MIT",
   "homepage": "https://github.com/jorgegonzalez/zoe",
   "repository": {
@@ -25,14 +14,11 @@
   },
   "keywords": [
     "zoe",
-    "airbnb",
     "code checker",
     "code linter",
     "code style",
     "eslint",
     "formatter",
-    "jshint",
-    "lint",
     "linter",
     "prettier",
     "react",
@@ -52,22 +38,24 @@
     "zoe": "dist/index.js"
   },
   "dependencies": {
-    "babel-eslint": "^10.0.1",
+    "@typescript-eslint/eslint-plugin": "^1.2.0",
+    "@typescript-eslint/parser": "^1.2.0",
+    "babel-eslint": "9.x",
     "chalk": "^2.4.1",
-    "eslint": "^5.11.0",
-    "eslint-config-airbnb": "^17.1.0",
-    "eslint-config-prettier": "^3.3.0",
+    "eslint": "5.x",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-config-react-app": "^3.0.6",
     "eslint-config-zoe": "*",
     "eslint-formatter-pretty": "^2.0.0",
-    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-flowtype": "2.x",
+    "eslint-plugin-import": "2.x",
     "eslint-plugin-jest": "^22.1.2",
-    "eslint-plugin-jsx": "^0.0.2",
-    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-jsx-a11y": "6.x",
     "eslint-plugin-no-use-extend-native": "^0.4.0",
-    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-promise": "^4.0.1",
-    "eslint-plugin-react": "^7.11.1",
-    "eslint-plugin-typescript": "^0.14.0",
+    "eslint-plugin-react": "7.x",
+    "eslint-plugin-react-hooks": "^0.0.0",
     "eslint-plugin-unicorn": "^6.0.1",
     "execa": "^1.0.0",
     "globby": "^8.0.1",
@@ -76,7 +64,6 @@
     "ora": "^3.0.0",
     "prettier": "^1.15.3",
     "read-pkg": "^4.0.1",
-    "typescript-eslint-parser": "^21.0.2",
     "v8-compile-cache": "^2.0.2",
     "write-json-file": "^3.0.2",
     "write-pkg": "^3.2.0"
@@ -96,7 +83,7 @@
     "@types/update-notifier": "^2.2.0",
     "@types/which-pm": "^1.0.0",
     "@types/write-pkg": "^3.1.0",
-    "typescript": "3.1.1"
+    "typescript": "3.2.1"
   },
   "scripts": {
     "build": "tsc",

@@ -1,10 +1,8 @@
 {
   "name": "eslint-config-zoe",
-  "version": "1.16.0",
+  "version": "1.17.0",
   "description": "🌀 ESLint shareable config for Zoe.",
-  "author": {
-    "name": "Jorge Gonzalez"
-  },
+  "author": "https://github.com/jorgegonzalez",
   "license": "MIT",
   "homepage": "https://github.com/jorgegonzalez/zoe",
   "repository": {
