@@ -5,6 +5,7 @@ module.exports = {
 		node: true
 	},
 	extends: [
+		'eslint:recommended',
 		'react-app',
 		'plugin:unicorn/recommended',
 		'plugin:jest/recommended',
@@ -24,6 +25,7 @@ module.exports = {
 		}
 	},
 	rules: {
+		'no-console': 'off',
 		'prettier/prettier': 'error',
 		'no-use-extend-native/no-use-extend-native': 'error',
 		'unicorn/filename-case': 'off',
