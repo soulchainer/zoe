@@ -7,7 +7,7 @@
 - Defaults to **[Prettier](https://github.com/prettier/prettier)** for formatting and style rules.
 - Out-of-the-box support for **React**, **TypeScript**, and **Jest**. No need to manually install any additional plugins or configs.
 - Fix issues by running `zoe --fix`.
-- Includes [eslint-plugin-react-hooks](https://github.com/xjamundx/eslint-plugin-promise), [eslint-plugin-unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn), and [eslint-plugin-react-hooks](https://github.com/facebook/react/tree/master/packages/eslint-plugin-react-hooks) for some additional goodies.
+- Includes [eslint-plugin-promise](https://github.com/xjamundx/eslint-plugin-promise), [eslint-plugin-unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn), and [eslint-plugin-react-hooks](https://github.com/facebook/react/tree/master/packages/eslint-plugin-react-hooks) for some additional goodies.
 
 ## Installation
 
