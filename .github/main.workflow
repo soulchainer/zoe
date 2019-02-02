@@ -1,9 +1,17 @@
-workflow "New workflow" {
+workflow "Build on push" {
   on = "push"
-  resolves = ["GitHub Action for npm"]
+  resolves = ["Build"]
 }
 
-action "GitHub Action for npm" {
-  uses = "actions/npm@3c8332795d5443adc712d30fa147db61fd520b5a"
-  runs = "build"
+action "Install" {
+  uses = "aquariuslt/github-actions-yarn@master"
+  runs = "yarn"
+  args = "install"
+}
+
+action "Build" {
+  uses = "aquariuslt/github-actions-yarn@master"
+  needs = ["Install"]
+  args = "build"
+  runs = "yarn"
 }
