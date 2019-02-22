@@ -23,12 +23,16 @@ const { flags, pkg, input } = meow(help, {
 });
 
 async function lint(): Promise<void> {
-	process.exitCode = 0;
-
 	// Zoe x.x.x
 	log(zoe, pkg.version);
 
 	const results = engine(input, flags.fix);
+	const { errorCount } = results.report;
+	let exitCode = 0;
+	if (errorCount > 0) {
+		exitCode = 1;
+	}
+	process.exitCode = exitCode;
 	logger(results, flags.fix, flags.verbose);
 }
 
